@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MEY</string>
+    <string name="logo_app">Logo App</string>
+    <string name="text_screen_one">Kenali Suasana Hatimu dengan Mudah</string>
+    <string name="lewati">Lewati</string>
+    <string name="Lanjut">Lanjut</string>
+    <string name="text_description_one">Aplikasi MEY membantu mengenali suasana hatimu  melalui Pengenalan Ekpresi Wajah sehingga kamu dapat sehingga kamu dapat mengatasi suasuan hatimu dengan mudah dan cepat bersama MEY</string>
+    <string name="gambar1">gambar1</string>
+    <string name="text_screen_two">Kenali Playlistmu sesuai Moodmu setiap hari</string>
+    <string name="text_description_two">Aplikasi MEY membantu untuk memutarkan lagu sesuai dengan ekspresi wajah yang anda scanning dengan mudah bersama MEY</string>
+    <string name="text_screen_three">Buatlah Harimu Menjadi Lebih Produktif dengan mencatat Jadwal</string>
+    <string name="text_description_three">Aplikasi MEY membantumu dalam mencatat Jadwal, membuat Reminder agar harimu lebih Produktif </string>
+    <string name="finish">Selesai</string>
+    <string name="login">Login</string>
+    <string name="register_account">Buat Akun Baru</string>
+    <string name="register">Register</string>
+    <string name="your_name">Nama Lengkap</string>
+    <string name="your_email">Email</string>
+    <string name="your_password">Password</string>
+    <string name="your_exist_account">Sudah Punya Akun? Yuk Login</string>
+    <string name="forgot_password">Lupa password</string>
+    <string name="not_have_account">Belum Punya Akun ? Yuk Register</string>
+</resources>

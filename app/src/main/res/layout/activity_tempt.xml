@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/splash_screen_color"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:alpha="0"
+        android:id="@+id/logo_app"
+        android:layout_width="257dp"
+        android:src="@drawable/logo_icon"
+        android:layout_height="260dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="52dp"
+        android:contentDescription="@string/logo_app"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_login_tempt"
+        android:layout_width="297dp"
+        android:alpha="0"
+        android:layout_height="45dp"
+        style="@style/ThemeOverlay.Material3.Button.ElevatedButton"
+        app:cornerRadius="10dp"
+        android:text="@string/login"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/btn_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo_app" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_register_tempt"
+        android:layout_width="297dp"
+        android:layout_height="45dp"
+        android:alpha="0"
+        app:cornerRadius="10dp"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:text="@string/register_account"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="@id/btn_login_tempt"
+        app:layout_constraintStart_toStartOf="@id/btn_login_tempt"
+        app:layout_constraintTop_toBottomOf="@id/btn_login_tempt" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

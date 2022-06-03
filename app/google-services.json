@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "870961572883",
+    "project_id": "projectcapstone-bd570",
+    "storage_bucket": "projectcapstone-bd570.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:870961572883:android:529c8a504f15200b0ea3e6",
+        "android_client_info": {
+          "package_name": "com.candra.projectcapstone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "870961572883-494lo8hgeoovne8hf3qvqqh34j7afmn0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiTSDKR0u3iVDttTyqq6wmpqUsGFjfx_A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "870961572883-494lo8hgeoovne8hf3qvqqh34j7afmn0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
