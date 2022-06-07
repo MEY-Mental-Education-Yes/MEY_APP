@@ -30,5 +30,4 @@ object Animation {
             start()
         }
     }
-
 }

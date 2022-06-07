@@ -1,12 +1,7 @@
 package com.candra.projectcapstone.activity.tempt
 
-import android.app.Activity
-import android.content.Context
-import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.candra.projectcapstone.activity.login.LoginActivity
-import com.candra.projectcapstone.activity.register.RegisterActivity
 import com.candra.projectcapstone.databinding.ActivityTemptBinding
 import com.candra.projectcapstone.helper.Animation
 import com.candra.projectcapstone.helper.Helper

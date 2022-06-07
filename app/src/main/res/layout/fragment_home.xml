@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splash_screen_color"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="0dp"
+        android:elevation="5dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="@color/splash_screen_color"
+        android:layout_height="?actionBarSize"
+        android:id="@+id/toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/gambar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/gambar1"
+                android:src="@drawable/logo_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home"
+                android:id="@+id/home"
+                android:textSize="20sp"
+                android:layout_marginStart="10dp"
+                app:layout_constraintStart_toEndOf="@id/gambar"
+                app:layout_constraintTop_toTopOf="@id/gambar"
+                app:layout_constraintBottom_toBottomOf="@id/gambar"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                app:cardCornerRadius="20dp"
+                android:focusable="true"
+                android:clickable="true"
+                android:id="@+id/containerBookmark"
+                app:layout_constraintBottom_toBottomOf="@id/home"
+                app:layout_constraintEnd_toStartOf="@id/containerNotification"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/home"
+                app:layout_constraintTop_toTopOf="@id/home"
+                app:layout_constraintVertical_bias="1.0"
+                >
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:id="@+id/containerNotification"
+                android:focusable="true"
+                android:clickable="true"
+                app:layout_constraintTop_toTopOf="@id/containerBookmark"
+                android:contentDescription="@string/gambar1"
+                app:layout_constraintBottom_toBottomOf="@id/containerBookmark"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="20dp"
+                android:layout_height="wrap_content">
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_width="match_parent"
+          android:elevation="8dp"
+          android:visibility="gone"
+          android:id="@+id/parentCard"
+          app:layout_constraintTop_toBottomOf="@+id/toolbar"
+          android:background="@drawable/background_cardview"
+          android:layout_height="86dp">
+
+          <ImageView
+              android:id="@+id/gambarAccount"
+              android:layout_width="56dp"
+              android:layout_height="56dp"
+              android:layout_marginStart="27dp"
+              android:layout_marginTop="15dp"
+              android:layout_marginBottom="15dp"
+              android:contentDescription="@string/gambar1"
+              android:src="@drawable/ic_baseline_image_24"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintVertical_bias="0.466" />
+
+          <com.google.android.material.textview.MaterialTextView
+              android:id="@+id/welcome"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="24dp"
+              android:layout_marginTop="17dp"
+              android:textSize="16sp"
+              android:layout_marginEnd="74dp"
+              android:text="@string/welcome"
+              android:textAlignment="center"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="1.0"
+              app:layout_constraintStart_toEndOf="@+id/gambarAccount"
+              app:layout_constraintTop_toTopOf="parent" />
+
+          <com.google.android.material.textview.MaterialTextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:layout_constraintTop_toBottomOf="@+id/welcome"
+              app:layout_constraintEnd_toEndOf="@id/welcome"
+              app:layout_constraintStart_toStartOf="@id/welcome"
+              app:layout_constraintBottom_toBottomOf="parent"
+              android:text="Candra Julius Sinaga"
+              android:textSize="20sp"
+              android:textStyle="bold" />
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/background_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/text_your_mood"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72dp"
+            android:text="@string/how_your_mood"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            app:rippleColor="@android:color/white"
+            android:focusable="true"
+            android:id="@+id/cardview_container_face"
+            style="@style/Widget.Material3.CardView.Elevated"
+            android:backgroundTint="@color/splash_screen_color"
+            app:layout_constraintEnd_toEndOf="@id/text_your_mood"
+            app:layout_constraintStart_toStartOf="@id/text_your_mood"
+            app:layout_constraintTop_toBottomOf="@id/text_your_mood">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:id="@+id/icon_face_rocognition"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:contentDescription="@string/gambar1"
+                    android:src="@drawable/face_recognition" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:id="@+id/btn_all_music"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/splash_screen_color"
+            app:layout_constraintTop_toBottomOf="@id/cardview_container_face"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="70dp"
+            android:focusable="true"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:clickable="true"
+            app:rippleColor="@color/white"
+            android:layout_marginStart="92dp"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_marginEnd="89dp"
+            android:text="@string/klik_musik"
+            app:cornerRadius="20dp"
+            android:drawableEnd="@drawable/ic_baseline_music_note_24"
+            android:textAllCaps="false" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

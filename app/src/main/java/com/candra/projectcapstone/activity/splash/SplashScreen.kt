@@ -8,11 +8,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.candra.projectcapstone.activity.home.MainActivity
 import com.candra.projectcapstone.activity.onboarding.ViewPagerActivity
-import com.candra.projectcapstone.activity.tempt.TemplateLoginAndRegister
 import com.candra.projectcapstone.databinding.SplashScreenActivityBinding
 import com.candra.projectcapstone.helper.Animation
 import com.candra.projectcapstone.helper.LocalShared
-import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 

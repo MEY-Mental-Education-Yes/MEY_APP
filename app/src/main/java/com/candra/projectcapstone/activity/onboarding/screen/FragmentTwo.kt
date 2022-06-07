@@ -1,5 +1,6 @@
 package com.candra.projectcapstone.activity.onboarding.screen
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -26,13 +27,16 @@ class FragmentTwo : Fragment()
         return binding.root
     }
 
+    @SuppressLint("SetTextI18n")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val viewPager2 = activity?.findViewById<ViewPager2>(R.id.view_pager_2)
 
         binding.apply {
+            btnNextScreenOne.text = "Finish"
             btnNextScreenOne.setOnClickListener {
-                viewPager2?.currentItem = 2
+                Helper.toScreenHome(requireActivity())
+                Helper.setCheckedData(lifecycleScope,requireActivity())
             }
             btnSkipScreenOne.setOnClickListener {
                 Helper.toScreenHome(requireActivity())
