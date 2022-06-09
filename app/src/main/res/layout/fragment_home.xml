@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/splash_screen_color"
@@ -77,56 +78,56 @@
 
     </androidx.appcompat.widget.Toolbar>
 
-      <androidx.constraintlayout.widget.ConstraintLayout
-          android:layout_width="match_parent"
-          android:elevation="8dp"
-          android:visibility="gone"
-          android:id="@+id/parentCard"
-          app:layout_constraintTop_toBottomOf="@+id/toolbar"
-          android:background="@drawable/background_cardview"
-          android:layout_height="86dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:elevation="8dp"
+        android:visibility="gone"
+        android:id="@+id/parentCard"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:background="@drawable/background_cardview"
+        android:layout_height="86dp">
 
-          <ImageView
-              android:id="@+id/gambarAccount"
-              android:layout_width="56dp"
-              android:layout_height="56dp"
-              android:layout_marginStart="27dp"
-              android:layout_marginTop="15dp"
-              android:layout_marginBottom="15dp"
-              android:contentDescription="@string/gambar1"
-              android:src="@drawable/ic_baseline_image_24"
-              app:layout_constraintBottom_toBottomOf="parent"
-              app:layout_constraintStart_toStartOf="parent"
-              app:layout_constraintTop_toTopOf="parent"
-              app:layout_constraintVertical_bias="0.466" />
+        <ImageView
+            android:id="@+id/gambarAccount"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:contentDescription="@string/gambar1"
+            android:src="@drawable/ic_baseline_image_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.466" />
 
-          <com.google.android.material.textview.MaterialTextView
-              android:id="@+id/welcome"
-              android:layout_width="0dp"
-              android:layout_height="wrap_content"
-              android:layout_marginStart="24dp"
-              android:layout_marginTop="17dp"
-              android:textSize="16sp"
-              android:layout_marginEnd="74dp"
-              android:text="@string/welcome"
-              android:textAlignment="center"
-              app:layout_constraintEnd_toEndOf="parent"
-              app:layout_constraintHorizontal_bias="1.0"
-              app:layout_constraintStart_toEndOf="@+id/gambarAccount"
-              app:layout_constraintTop_toTopOf="parent" />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/welcome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="17dp"
+            android:textSize="16sp"
+            android:layout_marginEnd="74dp"
+            android:text="@string/welcome"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/gambarAccount"
+            app:layout_constraintTop_toTopOf="parent" />
 
-          <com.google.android.material.textview.MaterialTextView
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              app:layout_constraintTop_toBottomOf="@+id/welcome"
-              app:layout_constraintEnd_toEndOf="@id/welcome"
-              app:layout_constraintStart_toStartOf="@id/welcome"
-              app:layout_constraintBottom_toBottomOf="parent"
-              android:text="Candra Julius Sinaga"
-              android:textSize="20sp"
-              android:textStyle="bold" />
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/welcome"
+            app:layout_constraintEnd_toEndOf="@id/welcome"
+            app:layout_constraintStart_toStartOf="@id/welcome"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="Candra Julius Sinaga"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
-      </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="0dp"
@@ -196,7 +197,7 @@
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="70dp"
             android:focusable="true"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:textColor="@android:color/white"
             android:clickable="true"
             app:rippleColor="@color/white"
@@ -209,8 +210,5 @@
             android:textAllCaps="false" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,9 +10,7 @@ import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.LifecycleCoroutineScope
 import coil.load
 import com.candra.projectcapstone.R
-import com.candra.projectcapstone.activity.login.LoginActivity
-import com.candra.projectcapstone.activity.register.RegisterActivity
-import com.candra.projectcapstone.activity.tempt.TemplateLoginAndRegister
+import com.candra.projectcapstone.activity.home.MainActivity
 import kotlinx.coroutines.launch
 
 
@@ -31,13 +29,8 @@ object Helper {
         }
     }
 
-    fun toScreenHome(fragmentActivity: FragmentActivity) {
-        fragmentActivity.startActivity(
-            Intent(
-                fragmentActivity,
-                TemplateLoginAndRegister::class.java
-            )
-        )
+    fun toHomeScreen(fragmentActivity: FragmentActivity){
+        fragmentActivity.startActivity(Intent(fragmentActivity,MainActivity::class.java))
         fragmentActivity.finish()
     }
     
@@ -45,14 +38,6 @@ object Helper {
         lifecycle.launch {
             LocalShared.setCheckedLocalOnBoarding(context)
         }
-    }
-
-    fun toNavigateLoginActivity(context: Context) {
-        context.startActivity(Intent(context, LoginActivity::class.java))
-    }
-
-    fun toNavigateRegisterActivity(context: Context) {
-        context.startActivity(Intent(context, RegisterActivity::class.java))
     }
 
     fun loadFragment(fragment: Fragment, fragmentManager: FragmentManager) {

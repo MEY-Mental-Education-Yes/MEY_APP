@@ -5,22 +5,6 @@
     android:background="@color/splash_screen_color"
     android:layout_height="match_parent">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar_screen"
-        android:layout_width="match_parent"
-        android:layout_height="102dp"
-        android:background="@drawable/vector"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        >
-
-        <ImageView
-            android:layout_width="105dp"
-            android:layout_height="101dp"
-            android:src="@drawable/logo_icon"
-            android:contentDescription="@string/logo_app" />
-    </androidx.appcompat.widget.Toolbar>
 
     <ImageView
         android:id="@+id/iv_screen_one"
@@ -31,8 +15,9 @@
         android:layout_marginEnd="57dp"
         android:contentDescription="@string/gambar1"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/toolbar_screen" />
+         />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/text_screen_one"
@@ -42,6 +27,7 @@
         android:text="@string/text_screen_two"
         android:textAlignment="center"
         android:textSize="20sp"
+        android:textColor="@color/inactivate"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@id/iv_screen_one"
         app:layout_constraintStart_toStartOf="@id/iv_screen_one"
@@ -53,7 +39,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="10dp"
-        android:textColor="#7D7D7D"
+        android:textColor="@android:color/white"
         android:textSize="15sp"
         android:textStyle="normal"
         android:padding="8dp"

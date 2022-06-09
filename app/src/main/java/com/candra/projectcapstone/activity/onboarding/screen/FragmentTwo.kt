@@ -35,11 +35,11 @@ class FragmentTwo : Fragment()
         binding.apply {
             btnNextScreenOne.text = "Finish"
             btnNextScreenOne.setOnClickListener {
-                Helper.toScreenHome(requireActivity())
+                Helper.toHomeScreen(requireActivity())
                 Helper.setCheckedData(lifecycleScope,requireActivity())
             }
             btnSkipScreenOne.setOnClickListener {
-                Helper.toScreenHome(requireActivity())
+                Helper.toHomeScreen(requireActivity())
                 Helper.setCheckedData(lifecycleScope,requireActivity())
             }
             Helper.imageScreen(ivScreenOne,IMAGE_SCREEN_TWO)

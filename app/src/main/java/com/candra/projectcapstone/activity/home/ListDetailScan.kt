@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import coil.load
-import coil.transform.RoundedCornersTransformation
+import coil.transform.CircleCropTransformation
 import com.candra.projectcapstone.R
 import com.candra.projectcapstone.adapter.AdapterForFear
 import com.candra.projectcapstone.databinding.ResultActivityBinding
@@ -66,7 +66,7 @@ class ListDetailScan: AppCompatActivity()
 
 
         imageView.load(convertFileToBitmap){
-            transformations(RoundedCornersTransformation(20f))
+            transformations(CircleCropTransformation())
         }
         textResultScan.text = resultScanFace
         textDescriptionResultScan.text = "Lagu untuk hasil ${resultScanFace}, Selamat menikmati lagu ${resultScanFace}"
@@ -93,6 +93,9 @@ class ListDetailScan: AppCompatActivity()
             }
             Constant.NEUTRAL -> {
                 listMusicViewModel.getAllMusicList(Constant.NEUTRAL)
+            }
+            Constant.SURPRISE -> {
+                listMusicViewModel.getAllMusicList(Constant.SURPRISE)
             }
         }
     }

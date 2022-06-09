@@ -6,6 +6,7 @@
         <entry key="..\:/Project/ProjectCapstone/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1275" />
         <entry key="..\:/Project/ProjectCapstone/app/src/main/res/drawable/background_bottom_navigation.xml" value="0.1275" />
         <entry key="..\:/Project/ProjectCapstone/app/src/main/res/drawable/background_cardview.xml" value="0.1275" />
+        <entry key="..\:/Project/ProjectCapstone/app/src/main/res/drawable/background_color.xml" value="0.1" />
         <entry key="..\:/Project/ProjectCapstone/app/src/main/res/drawable/background_home.xml" value="0.1275" />
         <entry key="..\:/Project/ProjectCapstone/app/src/main/res/drawable/background_image_scan.xml" value="0.1275" />
         <entry key="..\:/Project/ProjectCapstone/app/src/main/res/drawable/backgroundshape.xml" value="0.1275" />
@@ -13,7 +14,9 @@
         <entry key="..\:/Project/ProjectCapstone/app/src/main/res/drawable/bg_rounded_activate.xml" value="0.1275" />
         <entry key="..\:/Project/ProjectCapstone/app/src/main/res/drawable/bg_rounded_inactivate.xml" value="0.1275" />
         <entry key="..\:/Project/ProjectCapstone/app/src/main/res/drawable/ic_baseline_bookmark_24.xml" value="0.1275" />
+        <entry key="..\:/Project/ProjectCapstone/app/src/main/res/drawable/ic_baseline_broken_image_24.xml" value="0.1275" />
         <entry key="..\:/Project/ProjectCapstone/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.1275" />
+        <entry key="..\:/Project/ProjectCapstone/app/src/main/res/drawable/ic_baseline_image_24.xml" value="0.1275" />
         <entry key="..\:/Project/ProjectCapstone/app/src/main/res/drawable/ic_baseline_music_note_24.xml" value="0.1275" />
         <entry key="..\:/Project/ProjectCapstone/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1275" />
         <entry key="..\:/Project/ProjectCapstone/app/src/main/res/drawable/item_color.xml" value="0.1275" />
@@ -23,10 +26,10 @@
         <entry key="..\:/Project/ProjectCapstone/app/src/main/res/layout/activity_tempt.xml" value="0.16" />
         <entry key="..\:/Project/ProjectCapstone/app/src/main/res/layout/camera_x_activity.xml" value="0.16" />
         <entry key="..\:/Project/ProjectCapstone/app/src/main/res/layout/fragment_home.xml" value="0.2" />
-        <entry key="..\:/Project/ProjectCapstone/app/src/main/res/layout/fragment_music.xml" value="0.1" />
+        <entry key="..\:/Project/ProjectCapstone/app/src/main/res/layout/fragment_music.xml" value="0.22" />
         <entry key="..\:/Project/ProjectCapstone/app/src/main/res/layout/fragment_screen_one.xml" value="0.2" />
         <entry key="..\:/Project/ProjectCapstone/app/src/main/res/layout/fragment_screen_three.xml" value="0.21" />
-        <entry key="..\:/Project/ProjectCapstone/app/src/main/res/layout/fragment_screen_two.xml" value="0.21" />
+        <entry key="..\:/Project/ProjectCapstone/app/src/main/res/layout/fragment_screen_two.xml" value="0.25" />
         <entry key="..\:/Project/ProjectCapstone/app/src/main/res/layout/fragment_view_pager.xml" value="0.17028985507246377" />
         <entry key="..\:/Project/ProjectCapstone/app/src/main/res/layout/item_list_placeholder.xml" value="0.1631912964641886" />
         <entry key="..\:/Project/ProjectCapstone/app/src/main/res/layout/list_item_chip.xml" value="0.25" />

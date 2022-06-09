@@ -9,10 +9,10 @@ import androidx.lifecycle.lifecycleScope
 import androidx.viewpager2.widget.ViewPager2
 import com.candra.projectcapstone.R
 import com.candra.projectcapstone.databinding.FragmentScreenOneBinding
+import com.candra.projectcapstone.helper.Helper
 import com.candra.projectcapstone.helper.Helper.IMAGE_SCREEN_ONE
 import com.candra.projectcapstone.helper.Helper.imageScreen
 import com.candra.projectcapstone.helper.Helper.setCheckedData
-import com.candra.projectcapstone.helper.Helper.toScreenHome
 
 class FragmentOne: Fragment()
 {
@@ -39,7 +39,7 @@ class FragmentOne: Fragment()
             }
 
             btnSkipScreenOne.setOnClickListener {
-                toScreenHome(requireActivity())
+                Helper.toHomeScreen(requireActivity())
                 setCheckedData(lifecycleScope,requireActivity())
             }
 

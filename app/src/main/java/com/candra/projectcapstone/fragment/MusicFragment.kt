@@ -1,5 +1,6 @@
 package com.candra.projectcapstone.fragment
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -16,6 +17,7 @@ import com.candra.projectcapstone.helper.Helper.makeToast
 import com.candra.projectcapstone.viewmodel.ListMusicViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
+@SuppressLint("SetTextI18n")
 @AndroidEntryPoint
 class MusicFragment: Fragment() {
 
@@ -40,6 +42,7 @@ class MusicFragment: Fragment() {
         setBackgroundCardView()
         setObserverData()
         setAdapterToMusicFragment()
+        setTextChip()
     }
 
     private fun setAdapterToMusicFragment(){
@@ -56,36 +59,52 @@ class MusicFragment: Fragment() {
         }
     }
 
+    private fun setTextChip(){
+        binding.apply {
+            chipAngry.text = Constant.ANGRY
+            chipHappy.text = Constant.HAPPY
+            chipNetral.text = Constant.NEUTRAL
+            chipSad.text = Constant.SAD
+            chipScarry.text = Constant.FEAR
+            chipSuprise.text = Constant.SURPRISE
+            chipDisgust.text = Constant.DISGUST
+        }
+
+    }
+
     private fun setActionComponentClick(){
         binding.apply {
             containerBookmark.setOnClickListener { makeToast(requireActivity()) }
             containerNotification.setOnClickListener { makeToast(requireActivity()) }
             setDefaultListMusic()
             chipAngry.setOnClickListener {
-                listViewModel.getAllMusicList(Constant.ANGRY)
-                chipAngry.text = Constant.ANGRY
+               setChipAndTextView(Constant.ANGRY)
             }
             chipHappy.setOnClickListener {
-                listViewModel.getAllMusicList(Constant.HAPPY)
-                chipHappy.text = Constant.HAPPY
+                setChipAndTextView(Constant.HAPPY)
             }
             chipNetral.setOnClickListener {
-                listViewModel.getAllMusicList(Constant.NEUTRAL)
-                chipNetral.text = Constant.NEUTRAL
+                setChipAndTextView(Constant.NEUTRAL)
             }
             chipSad.setOnClickListener {
-                listViewModel.getAllMusicList(Constant.SAD)
-                chipSad.text = Constant.SAD
+                setChipAndTextView(Constant.SAD)
             }
             chipScarry.setOnClickListener {
-                listViewModel.getAllMusicList(Constant.FEAR)
-                chipScarry.text = Constant.FEAR
+                setChipAndTextView(Constant.FEAR)
             }
             chipSuprise.setOnClickListener {
-                listViewModel.getAllMusicList(Constant.DISGUST)
-                chipScarry.text = Constant.DISGUST
+                setChipAndTextView(Constant.SURPRISE)
             }
+            chipDisgust.setOnClickListener {
+                setChipAndTextView(Constant.DISGUST)
+            }
+
         }
+    }
+
+    private fun setChipAndTextView(category: String){
+        listViewModel.getAllMusicList(category)
+        binding.textYourMood.text = "list of songs based on your $category mood "
     }
 
     private fun setObserverData(){
@@ -98,12 +117,12 @@ class MusicFragment: Fragment() {
         }
     }
 
-
     private fun setDefaultListMusic(){
         listViewModel.getAllMusicList(Constant.HAPPY)
         binding.apply {
             chipHappy.isChecked = true
             chipHappy.text = Constant.HAPPY
+            textYourMood.text = "list of songs based on your ${Constant.HAPPY} mood "
         }
     }
 

@@ -17,4 +17,5 @@ object Constant {
    const val ANGRY = "Angry"
    const val NEUTRAL = "Neutral"
    const val FEAR = "Fear"
+   const val SURPRISE = "Surprise"
 }

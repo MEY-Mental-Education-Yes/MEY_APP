@@ -76,7 +76,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.appcompat.widget.Toolbar>
-    
+
     <HorizontalScrollView
         android:id="@+id/horizontal_scrool_chip"
         app:layout_constraintStart_toStartOf="parent"
@@ -100,44 +100,44 @@
             <com.google.android.material.chip.Chip
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/senang"
                 style="@style/customStyleChip"
                 android:id="@+id/chip_happy" />
 
             <com.google.android.material.chip.Chip
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/sedih"
                 style="@style/customStyleChip"
                 android:id="@+id/chip_sad" />
 
             <com.google.android.material.chip.Chip
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/takut"
                 style="@style/customStyleChip"
                 android:id="@+id/chip_scarry" />
 
             <com.google.android.material.chip.Chip
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/marah"
                 style="@style/customStyleChip"
                 android:id="@+id/chip_angry" />
 
             <com.google.android.material.chip.Chip
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/terkejut"
                 style="@style/customStyleChip"
                 android:id="@+id/chip_suprise" />
 
             <com.google.android.material.chip.Chip
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/netral"
                 style="@style/customStyleChip"
                 android:id="@+id/chip_netral" />
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/customStyleChip"
+                android:id="@+id/chip_disgust" />
 
         </com.google.android.material.chip.ChipGroup>
 
@@ -148,7 +148,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_marginStart="10dp"
-        android:text="@string/daftar_lagu_berdasarkan_mood_senang_anda"
         android:id="@+id/text_your_mood"
         app:layout_constraintTop_toBottomOf="@id/horizontal_scrool_chip"
         app:layout_constraintEnd_toEndOf="parent"

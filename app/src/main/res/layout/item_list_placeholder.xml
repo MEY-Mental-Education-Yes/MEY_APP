@@ -19,16 +19,16 @@
         android:layout_height="wrap_content"
         android:padding="8dp">
 
-    <ImageView
-        android:background="@color/shimmer_placeholder"
-        android:id="@+id/image_logo_music"
-        android:layout_width="84dp"
-        android:layout_height="86dp"
-        android:contentDescription="@string/gambar_music"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+        <ImageView
+            android:background="@color/shimmer_placeholder"
+            android:id="@+id/image_logo_music"
+            android:layout_width="84dp"
+            android:layout_height="86dp"
+            android:contentDescription="@string/gambar_music"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
 
         <com.google.android.material.textview.MaterialTextView
             android:layout_width="0dp"
