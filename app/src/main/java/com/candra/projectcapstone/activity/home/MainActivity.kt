@@ -7,8 +7,9 @@ import com.candra.projectcapstone.databinding.ActivityMainBinding
 import com.candra.projectcapstone.fragment.HomeFragment
 import com.candra.projectcapstone.fragment.MusicFragment
 import com.candra.projectcapstone.helper.Helper
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 

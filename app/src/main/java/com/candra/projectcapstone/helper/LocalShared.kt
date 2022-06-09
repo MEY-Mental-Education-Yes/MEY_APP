@@ -13,7 +13,6 @@ object LocalShared {
 
     private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "localstore")
 
-
     fun getCheckedLocalOnBoarding(context: Context): Flow<Boolean> = context.dataStore.data.map { preferences ->
         preferences[isCheckedOnBoarding]?: false
     }

@@ -40,4 +40,5 @@
     <string name="tahap_developer">Fitur ini masih dalam tahap pengembangan</string>
     <string name="gagal_ambil_gambar">Gagal mengambil gambar</string>
     <string name="gagal_menampilkan_camera">Gagal menampilkan camera</string>
+    <string name="text_artist">Artist</string>
 </resources>
