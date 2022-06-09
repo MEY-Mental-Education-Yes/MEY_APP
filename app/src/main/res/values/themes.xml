@@ -12,5 +12,13 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+
+    </style>
+
+    <style name="customStyleChip" parent="Widget.MaterialComponents.Chip.Filter">
+        <item name="android:textSize">12sp</item>
+        <item name="backgroundColor">@color/chip_background</item>
+        <item name="android:textColor">@color/chip_text_color</item>
+        <item name="android:textStyle">bold</item>
     </style>
 </resources>

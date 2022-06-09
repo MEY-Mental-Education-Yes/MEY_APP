@@ -11,6 +11,8 @@ import com.candra.projectcapstone.R
 import com.candra.projectcapstone.databinding.FragmentScreenOneBinding
 import com.candra.projectcapstone.helper.Helper
 import com.candra.projectcapstone.helper.Helper.IMAGE_SCREEN_ONE
+import com.candra.projectcapstone.helper.Helper.imageScreen
+import com.candra.projectcapstone.helper.Helper.setCheckedData
 
 class FragmentOne: Fragment()
 {
@@ -37,11 +39,11 @@ class FragmentOne: Fragment()
             }
 
             btnSkipScreenOne.setOnClickListener {
-                Helper.toScreenHome(requireActivity())
-                Helper.setCheckedData(lifecycleScope,requireActivity())
+                Helper.toHomeScreen(requireActivity())
+                setCheckedData(lifecycleScope,requireActivity())
             }
 
-            Helper.imageScreen(ivScreenOne,IMAGE_SCREEN_ONE)
+            imageScreen(ivScreenOne,IMAGE_SCREEN_ONE)
         }
     }
 
