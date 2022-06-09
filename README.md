@@ -11,5 +11,5 @@ The MEY application is an application that can detect user expressions using Fac
    provide music list service after face is detected by Face Recognition
 
 ## Download App
-You can download app [Version.1.0.0]("https://github.com/MEY-Mental-Education-Yes/MEY_APP/releases/tag/1.0.0")
+You can download app Mey [versi 1.0.0](https://github.com/MEY-Mental-Education-Yes/MEY_APP/releases/tag/1.0.0)
 
