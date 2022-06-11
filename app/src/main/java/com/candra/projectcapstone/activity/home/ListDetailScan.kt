@@ -31,7 +31,6 @@ class ListDetailScan: AppCompatActivity()
 {
 
     private lateinit var binding: ResultActivityBinding
-    private var getFile: File? = null
     private val listMusicViewModel by viewModels<ListMusicViewModel>()
     private val adapterMusic by lazy { AdapterForFear() }
 
