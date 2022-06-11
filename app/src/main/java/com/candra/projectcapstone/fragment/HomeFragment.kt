@@ -44,7 +44,6 @@ import java.io.File
 class HomeFragment: Fragment()
 {
 
-
     private var _binding: FragmentHomeBinding? = null
 
     private val binding get() = _binding!!
@@ -111,7 +110,6 @@ class HomeFragment: Fragment()
             launcherIntentCamera.launch(intent)
         }
     }
-
 
     private val launcherIntentCamera = registerForActivityResult(
         ActivityResultContracts.StartActivityForResult()
