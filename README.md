@@ -7,9 +7,9 @@
 The MEY application is an application that can detect user expressions using Face Recognition technology, with this technology Mey can detect user expressions and connect to the list of songs we offer and the user can open the list with Youtube, Mey was created with the aim of improving the user's mood and make the user adjust the song according to the expression that is scanned
 
 ## Design APP
-|Splash Screen| Home | Camera | Result Scan | List Music Based Mood
-|--|--|--|--|--|
-| <p align= "center"><img src="https://raw.githubusercontent.com/MEY-Mental-Education-Yes/The-Logo-MEY/main/Splash%20Screen.png" width="200"></p> | <p align= "center"><img src="https://raw.githubusercontent.com/MEY-Mental-Education-Yes/The-Logo-MEY/main/HOME.png" width="200"></p> | <p align= "center"><img src="https://raw.githubusercontent.com/MEY-Mental-Education-Yes/The-Logo-MEY/main/camera.png" width="200"></p> | <p align="center"><img src="https://raw.githubusercontent.com/MEY-Mental-Education-Yes/The-Logo-MEY/main/result%20scan.png" width="200"></p> | <p align="center"><img src="https://raw.githubusercontent.com/MEY-Mental-Education-Yes/The-Logo-MEY/main/List%20Music%20Based%20Mood.png" width="200"></p> 
+|Splash Screen| Home | Camera | Result Scan | List Music Based Mood | Detail Music |
+|--|--|--|--|--|--|
+| <p align= "center"><img src="https://raw.githubusercontent.com/MEY-Mental-Education-Yes/The-Logo-MEY/main/Splash%20Screen.png" width="200"></p> | <p align= "center"><img src="https://raw.githubusercontent.com/MEY-Mental-Education-Yes/The-Logo-MEY/main/HOME.png" width="200"></p> | <p align= "center"><img src="https://raw.githubusercontent.com/MEY-Mental-Education-Yes/The-Logo-MEY/main/camera.png" width="200"></p> | <p align="center"><img src="https://raw.githubusercontent.com/MEY-Mental-Education-Yes/The-Logo-MEY/main/result%20scan.png" width="200"></p> | <p align="center"><img src="https://raw.githubusercontent.com/MEY-Mental-Education-Yes/The-Logo-MEY/main/list_music_app.jpeg" width="200"></p> | <p align="center"><img src="https://raw.githubusercontent.com/MEY-Mental-Education-Yes/The-Logo-MEY/main/detail_aplication.jpeg" width="200"></p>
 
 ## Feature
 - **Face Recognition**
