@@ -1,4 +1,7 @@
-# MEY APP
+<p id="downloads" align="center">
+	<img src="https://raw.githubusercontent.com/MEY-Mental-Education-Yes/The-Logo-MEY/main/logo_icon.png" height="120px"/>
+	<h1 align="center">Mey App</h1>
+</p>
 
 ## Overview MEY
 The MEY application is an application that can detect user expressions using Face Recognition technology, with this technology Mey can detect user expressions and connect to the list of songs we offer and the user can open the list with Youtube, Mey was created with the aim of improving the user's mood and make the user adjust the song according to the expression that is scanned
@@ -35,5 +38,7 @@ The MEY application is an application that can detect user expressions using Fac
 
 
 ## Download App
-You can download app Mey [versi 1.0.0](https://github.com/MEY-Mental-Education-Yes/MEY_APP/releases/tag/1.0.0)
+You can download the application by clicking the image below 
+
+[![name](https://raw.githubusercontent.com/MEY-Mental-Education-Yes/The-Logo-MEY/main/download.png)](https://github.com/MEY-Mental-Education-Yes/MEY_APP/releases/tag/1.0.0)
 
