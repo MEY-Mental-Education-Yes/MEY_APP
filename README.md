@@ -28,6 +28,11 @@ The MEY application is an application that can detect user expressions using Fac
 - [Firebase database](https://firebase.google.com/products/realtime-database?gclsrc=aw.ds&gclid=CjwKCAjw14uVBhBEEiwAaufYx6T0mwE4qaer1nVB4A20GkmtkOnEz3aQCkRLorW1z9fyI1mSEFCLHxoCeSMQAvD_BwE) -> **For database all data user in android**
 - [ViewPager](https://developer.android.com/training/animation/screen-slide) -> **For slider in OnBoarding**
 
+## Architecture
+|Architecture MVVM | Overview Architecture |
+|--|--|
+|<p align="center"><img src="https://raw.githubusercontent.com/MEY-Mental-Education-Yes/The-Logo-MEY/main/mvvm.png" width="350"></p> | Model–view–viewmodel (MVVM) is a software architectural pattern that facilitates the separation of the development of the graphical user interface (the view) – be it via a markup language or GUI code – from the development of the business logic or back-end logic (the model) so that the view is not dependent on any specific model platform.
+
 
 ## Download App
 You can download app Mey [versi 1.0.0](https://github.com/MEY-Mental-Education-Yes/MEY_APP/releases/tag/1.0.0)
