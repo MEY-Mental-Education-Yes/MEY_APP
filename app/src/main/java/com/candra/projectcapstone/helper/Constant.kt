@@ -18,4 +18,6 @@ object Constant {
    const val NEUTRAL = "Neutral"
    const val FEAR = "Fear"
    const val SURPRISE = "Surprise"
+   const val KEY_STRING = "url"
+   const val KEY_TITLE = "title"
 }

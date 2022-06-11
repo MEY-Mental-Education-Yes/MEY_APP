@@ -10,7 +10,6 @@
     android:layout_marginStart="5dp"
     android:elevation="5dp"
     android:clickable="true"
-    android:background="@color/chip_background"
     android:layout_height="wrap_content">
 
 

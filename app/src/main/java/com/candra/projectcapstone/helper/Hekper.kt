@@ -2,6 +2,8 @@ package com.candra.projectcapstone.helper
 
 import android.content.Context
 import android.content.Intent
+import android.graphics.Bitmap
+import android.graphics.Matrix
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
@@ -47,6 +49,6 @@ object Helper {
     fun makeToast(context: Context){
         Toast.makeText(context,context.getString(R.string.tahap_developer),Toast.LENGTH_SHORT).show()
     }
-
+    val String?.youtubeId get() = this?.split("v=")?.last()
 
 }

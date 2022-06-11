@@ -2,7 +2,9 @@ package com.candra.projectcapstone.activity.home
 
 import android.annotation.SuppressLint
 import android.content.Intent
+import android.graphics.Bitmap
 import android.graphics.BitmapFactory
+import android.graphics.Matrix
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
@@ -23,13 +25,13 @@ import com.google.android.material.textview.MaterialTextView
 import dagger.hilt.android.AndroidEntryPoint
 import java.io.File
 
+
 @AndroidEntryPoint
 class ListDetailScan: AppCompatActivity()
 {
 
     private lateinit var binding: ResultActivityBinding
     private var getFile: File? = null
-    private var getIsBackCamera:Boolean = false
     private val listMusicViewModel by viewModels<ListMusicViewModel>()
     private val adapterMusic by lazy { AdapterForFear() }
 
@@ -64,8 +66,9 @@ class ListDetailScan: AppCompatActivity()
         val resultScanFace = intent.getStringExtra(RESULT_SCAN_FACE)
         val convertFileToBitmap = BitmapFactory.decodeFile(resultImage.path)
 
+        val bitmapRotate =  setRotateBitmap(convertFileToBitmap)
 
-        imageView.load(convertFileToBitmap){
+        imageView.load(bitmapRotate){
             transformations(CircleCropTransformation())
         }
         textResultScan.text = resultScanFace
@@ -135,5 +138,13 @@ class ListDetailScan: AppCompatActivity()
     private fun toBackHomeFragment(){
         startActivity(Intent(this@ListDetailScan,MainActivity::class.java))
         finish()
+    }
+
+    private fun setRotateBitmap(bitmap: Bitmap): Bitmap{
+        val matrix = Matrix()
+
+        matrix.postRotate(90f)
+
+       return Bitmap.createScaledBitmap(bitmap, bitmap.width, bitmap.height, true)
     }
 }

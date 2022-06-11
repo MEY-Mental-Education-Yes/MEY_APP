@@ -1,15 +1,14 @@
 package com.candra.projectcapstone.adapter
 
 import android.content.Intent
-import android.net.Uri
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import coil.load
-import com.candra.projectcapstone.R
+import com.candra.projectcapstone.activity.home.ExoPlayerMedia
 import com.candra.projectcapstone.databinding.ListItemMusicBinding
+import com.candra.projectcapstone.helper.Constant
 import com.candra.projectcapstone.helper.Helper
 import com.candra.projectcapstone.model.ListMusicModel
 
@@ -23,7 +22,10 @@ class AdapterForFear(): RecyclerView.Adapter<AdapterForFear.FearViewHolder>() {
                 artistMusic.text = listMusic.artis
                 Helper.imageScreen(imageLogoMusic,listMusic.image)
                 containerMusic.setOnClickListener {
-                    itemView.context.startActivity(Intent(Intent.ACTION_VIEW,Uri.parse(listMusic.url)))
+                    Intent(itemView.context,ExoPlayerMedia::class.java).apply {
+                        putExtra(Constant.KEY_STRING,listMusic.url)
+                        putExtra(Constant.KEY_TITLE,listMusic.title)
+                    }.also { itemView.context.startActivity(it) }
                 }
             }
         }

@@ -10,6 +10,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:name=".di.MeyApp"
+        android:usesCleartextTraffic="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjectCapstone">
@@ -35,6 +36,10 @@
             tools:ignore="LockedOrientationActivity" />
 
         <activity android:name=".activity.home.ListDetailScan"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+        <activity android:name=".activity.home.ExoPlayerMedia"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
 
