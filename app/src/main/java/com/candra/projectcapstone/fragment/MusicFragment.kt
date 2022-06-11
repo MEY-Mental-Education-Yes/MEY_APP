@@ -31,7 +31,7 @@ class MusicFragment: Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentMusicBinding.inflate(inflater,container,false)
+        _binding = FragmentMusicBinding.inflate(inflater)
         return binding.root
     }
 
