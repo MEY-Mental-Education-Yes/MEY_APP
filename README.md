@@ -23,7 +23,7 @@ The MEY application is an application that can detect user expressions using Fac
 - [Shimmer](https://facebook.github.io/shimmer-android/) -> **For loading Cardview in android**
 - [Karumi Dexter](https://github.com/Karumi/Dexter) -> **For permission in android**
 - [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel) -> **For observer live data**
-- [Dagger Hilt](https://developer.android.com/training/dependency-injection/hilt-android?hl=id) -> **For inject to constructor in viewmodel
+- [Dagger Hilt](https://developer.android.com/training/dependency-injection/hilt-android?hl=id) -> **For inject to constructor in viewmodel**
 - [Firebase Auth](https://firebase.google.com/products/auth?gclsrc=aw.ds&gclid=CjwKCAjw14uVBhBEEiwAaufYx_byR8Qg-gpiqSa2sBK6Kh04k0UaCVVXoyVaw9AAQYgXD-0NtY6FLBoCrwwQAvD_BwE) -> **For authentication for user**
 - [Firebase database](https://firebase.google.com/products/realtime-database?gclsrc=aw.ds&gclid=CjwKCAjw14uVBhBEEiwAaufYx6T0mwE4qaer1nVB4A20GkmtkOnEz3aQCkRLorW1z9fyI1mSEFCLHxoCeSMQAvD_BwE) -> **For database all data user in android**
 - [ViewPager](https://developer.android.com/training/animation/screen-slide) -> **For slider in OnBoarding**
